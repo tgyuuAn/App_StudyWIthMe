@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".TwoFragment">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_viewpager2"
+        android:src="@drawable/viewpager2"
+        android:layout_width="300dp"
+        android:layout_height="400dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/neo3"
+        android:letterSpacing="-0.05"
+        android:text="스터디 위드미는 함께해요."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="-0.05"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="start"
+        android:text="지금 부경대학교 학생들의 스터디가 \n어떻게 진행되고 있는지 볼 수 있어요!"
+        android:textColor="@color/black"
+        android:fontFamily="@font/neo3"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>

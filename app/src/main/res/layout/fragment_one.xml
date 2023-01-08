@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".OneFragment">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_viewpager1"
+        android:src="@drawable/viewpager1"
+        android:layout_width="250dp"
+        android:layout_height="375dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/viewpager1_main"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:letterSpacing="-0.05"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/neo3"
+        android:textSize="24sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="-0.05"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="start"
+        android:text="@string/viewpager1_desc"
+        android:textColor="@color/black"
+        android:fontFamily="@font/neo3"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>
