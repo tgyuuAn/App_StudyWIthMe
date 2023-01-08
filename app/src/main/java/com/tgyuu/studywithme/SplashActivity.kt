@@ -1,5 +1,6 @@
 package com.tgyuu.studywithme
 
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -7,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
+import com.kakao.sdk.common.util.Utility
 
 class SplashActivity : AppCompatActivity() {
     lateinit var pref : SharedPreferences

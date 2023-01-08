@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "761492300962",
+    "project_id": "studywithme-7575f",
+    "storage_bucket": "studywithme-7575f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761492300962:android:96e732e43aa43be769a3fb",
+        "android_client_info": {
+          "package_name": "com.tgyuu.studywithme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761492300962-877skhc4c2esribcpd1bdou1djppsms6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tgyuu.studywithme",
+            "certificate_hash": "be0635f0fb390fe281672823cbc66e343740ffdf"
+          }
+        },
+        {
+          "client_id": "761492300962-nqvhm4ltmejotsufr1br8s5v926ra1iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsIEpjfKEyilDxLz3T8CWXnhH7ZR-SMzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761492300962-nqvhm4ltmejotsufr1br8s5v926ra1iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
