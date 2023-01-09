@@ -9,7 +9,7 @@ class ViewpagerAdapter(activity : FragmentActivity) : FragmentStateAdapter(activ
     val fragments : List<Fragment>
 
     init{
-        fragments = listOf(OneFragment(), TwoFragment(), ThreeFragment())
+        fragments = listOf(IntroduceOneFragment(), IntroduceTwoFragment(), IntroduceThreeFragment())
     }
 
     override fun getItemCount(): Int {

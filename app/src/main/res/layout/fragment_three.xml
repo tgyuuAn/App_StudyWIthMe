@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".ThreeFragment">
+    tools:context=".IntroduceThreeFragment">
 
     <ImageView
         android:layout_gravity="center"

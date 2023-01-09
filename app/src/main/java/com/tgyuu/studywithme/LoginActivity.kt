@@ -20,6 +20,7 @@ import com.tgyuu.studywithme.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     lateinit var binding : ActivityLoginBinding
+
     val requestLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
 
         val task = GoogleSignIn.getSignedInAccountFromIntent(it.data)
@@ -62,7 +63,19 @@ class LoginActivity : AppCompatActivity() {
             loginKaKao()
         }
 
+        binding.btnStudyAlready.setOnClickListener {
+            loginStudyAlready()
+        }
+
     }
+
+    private fun loginStudyAlready(){
+        val intent = Intent(this,MainActivity::class.java)
+        startActivity(intent)
+        Log.d("이미 스터디로그인","이미 스터디 로그인에 성공하였습니다.")
+        finish()
+    }
+
     private fun loginKaKao() {
 
         val Callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->

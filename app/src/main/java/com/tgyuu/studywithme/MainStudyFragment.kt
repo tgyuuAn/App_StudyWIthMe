@@ -6,13 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-
-class TwoFragment : Fragment() {
+class MainStudyFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_two, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_main_study, container, false)
     }
 }

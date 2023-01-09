@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.tgyuu.studywithme.databinding.FragmentThreeBinding
 
-class ThreeFragment : Fragment() {
+class IntroduceThreeFragment : Fragment() {
     lateinit var binding : FragmentThreeBinding
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

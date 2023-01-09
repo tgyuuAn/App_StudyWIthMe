@@ -17,6 +17,11 @@
     <string name="login_study">스터드  위드미  회원가입</string>
     <string name="login_already"><u>이미  회원가입이  되어  있으시다면?</u></string>
 
+    <string name="main_tab_home">홈</string>
+    <string name="main_tab_mystydy">내 스터디</string>
+    <string name="main_tab_addressbook">주소록</string>
+    <string name="main_tab_settings">설정</string>
+
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
