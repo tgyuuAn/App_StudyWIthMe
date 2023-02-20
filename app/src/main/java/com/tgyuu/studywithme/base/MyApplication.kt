@@ -1,12 +1,12 @@
-package com.tgyuu.studywithme
+package com.tgyuu.studywithme.base
 
-import androidx.multidex.MultiDexApplication
+import android.app.Application
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.kakao.sdk.common.KakaoSdk
 
-class MyApplication : MultiDexApplication() {
+class MyApplication : Application() {
     companion object {
         lateinit var auth : FirebaseAuth
         var email: String? = null

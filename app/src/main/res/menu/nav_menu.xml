@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mainHomeFragment"
+        android:icon="@drawable/main_home"
+        android:title="@string/main_tab_home" />
+    <item
+        android:id="@+id/mainStudyFragment"
+        android:icon="@drawable/main_study"
+        android:title="@string/main_tab_mystydy" />
+    <item
+        android:id="@+id/mainAddressBookFragment"
+        android:icon="@drawable/main_friends"
+        android:title="@string/main_tab_addressbook" />
+    <item
+        android:id="@+id/mainSettingsFragment"
+        android:icon="@drawable/main_settings"
+        android:title="@string/main_tab_settings" />
+</menu>

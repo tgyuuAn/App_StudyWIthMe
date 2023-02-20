@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainHomeFragment">
+    tools:context=".main.MainHomeFragment"
+    android:id="@+id/mainHomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -14,3 +18,4 @@
         android:text="홈 프래그먼트 입니다." />
 
 </FrameLayout>
+</layout>

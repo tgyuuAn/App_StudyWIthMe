@@ -1,16 +1,13 @@
-package com.tgyuu.studywithme
+package com.tgyuu.studywithme.introduce
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tgyuu.studywithme.base.BaseActivity
 import com.tgyuu.studywithme.databinding.ActivityIntroduceBinding
 
-class IntroduceActivity : AppCompatActivity() {
-    lateinit var binding : ActivityIntroduceBinding
+class IntroduceActivity : BaseActivity<ActivityIntroduceBinding>({ActivityIntroduceBinding.inflate(it)}){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityIntroduceBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         val viewPager = binding.viewpager2
         viewPager.adapter = ViewpagerAdapter(this)

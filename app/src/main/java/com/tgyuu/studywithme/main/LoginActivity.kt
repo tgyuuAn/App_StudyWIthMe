@@ -1,7 +1,6 @@
-package com.tgyuu.studywithme
+package com.tgyuu.studywithme.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
@@ -9,17 +8,16 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import com.kakao.sdk.auth.model.OAuthToken
-import com.kakao.sdk.common.KakaoSdk
 import com.kakao.sdk.common.model.ClientError
 import com.kakao.sdk.common.model.ClientErrorCause
 import com.kakao.sdk.user.UserApiClient
+import com.tgyuu.studywithme.base.MyApplication
+import com.tgyuu.studywithme.R
+import com.tgyuu.studywithme.base.BaseActivity
 import com.tgyuu.studywithme.databinding.ActivityLoginBinding
 
-class LoginActivity : AppCompatActivity() {
-    lateinit var binding : ActivityLoginBinding
+class LoginActivity : BaseActivity<ActivityLoginBinding>({ ActivityLoginBinding.inflate(it)}) {
 
     val requestLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
 
@@ -36,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
                         Log.d("구글로그인","구글로그인에 성공하였습니다.")
                         MyApplication.email = account.email
-                        val intent = Intent(this,MainActivity::class.java)
+                        val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                         finish()
 
@@ -52,8 +50,6 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
         binding.btnGoogle.setOnClickListener {
             loginGoogle()
@@ -70,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginStudyAlready(){
-        val intent = Intent(this,MainActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         Log.d("이미 스터디로그인","이미 스터디 로그인에 성공하였습니다.")
         finish()
@@ -123,7 +119,7 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
 
-                val intent = Intent(this,MainActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }
@@ -191,7 +187,7 @@ class LoginActivity : AppCompatActivity() {
                         }
                     }
 
-                    val intent = Intent(this,MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

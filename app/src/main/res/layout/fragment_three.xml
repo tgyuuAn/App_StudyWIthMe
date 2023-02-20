@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".IntroduceThreeFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:layout_gravity="center"
-        android:scaleType="fitXY"
-        android:id="@+id/iv_viewpager2"
-        android:src="@drawable/viewpager3"
-        android:layout_width="300dp"
-        android:layout_height="400dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".introduce.IntroduceThreeFragment">
+
+        <ImageView
+            android:id="@+id/iv_viewpager2"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/viewpager3" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="start"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/neo3"
-        android:letterSpacing="-0.05"
-        android:text="스터디 위드미와 달려볼까요?"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/neo3"
+            android:letterSpacing="-0.05"
+            android:text="스터디 위드미와 달려볼까요?"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:letterSpacing="-0.05"
-        android:layout_marginStart="20dp"
-        android:layout_gravity="start"
-        android:text=""
-        android:textColor="@color/black"
-        android:fontFamily="@font/neo3"
-        android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/neo3"
+            android:letterSpacing="-0.05"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="달리러가기"
-        android:fontFamily="@font/neo3"/>
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/neo3"
+            android:text="달리러가기" />
 
-</LinearLayout>
+    </LinearLayout>
+</layout>

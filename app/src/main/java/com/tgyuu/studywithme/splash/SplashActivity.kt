@@ -1,6 +1,5 @@
-package com.tgyuu.studywithme
+package com.tgyuu.studywithme.splash
 
-import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,8 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
-import com.kakao.sdk.common.util.Utility
+import androidx.lifecycle.lifecycleScope
+import com.tgyuu.studywithme.main.LoginActivity
+import com.tgyuu.studywithme.R
+import com.tgyuu.studywithme.introduce.IntroduceActivity
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class SplashActivity : AppCompatActivity() {
     lateinit var pref : SharedPreferences
@@ -19,15 +22,16 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         pref = getSharedPreferences("pref", Context.MODE_PRIVATE)
-
         pref.edit().apply {
             putBoolean("pref", true)
             apply()
         }
 
-        Handler(Looper.getMainLooper()).postDelayed({
+        lifecycleScope.launch{
+            delay(1500)
             firstCheck()
-        },1500)
+        }
+
     }
 
     private fun firstCheck(){
@@ -36,11 +40,11 @@ class SplashActivity : AppCompatActivity() {
                 putBoolean("pref",false)
                 apply()
             }
-            val intent = Intent(this,IntroduceActivity::class.java)
+            val intent = Intent(this, IntroduceActivity::class.java)
             startActivity(intent)
             finish()
         } else {
-            val intent = Intent(this,LoginActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }
