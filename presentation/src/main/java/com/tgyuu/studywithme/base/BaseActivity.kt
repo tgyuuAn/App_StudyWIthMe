@@ -19,7 +19,7 @@ abstract class BaseActivity<B : ViewDataBinding>(val bindingFactory : (LayoutInf
     }
 
     //뒤로가기 버튼 막기
-    override fun onBackPressed(){}
+    //override fun onBackPressed(){}
 
     fun makeToast(str : String) = Toast.makeText(this,str,Toast.LENGTH_SHORT).show()
 
